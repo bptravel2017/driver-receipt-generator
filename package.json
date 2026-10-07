@@ -1,10 +1,11 @@
 {
-  "name": "driver-receipt-generator",
-  "version": "1.0.0",
-  "description": "Generate professional receipts for rideshare, taxi, limo, and delivery drivers",
+  "name": "driver-receipt-generator-retired",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Deprecated documentation only: ReceAI's public Receipt maker has been retired; this package provides no receipt generation or sending.",
   "license": "MIT",
-  "clawhub": {
-    "category": "business",
-    "tags": ["receipt", "driver", "invoice", "rideshare", "taxi", "uber"]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bptravel2017/driver-receipt-generator.git"
   }
 }
