@@ -1,94 +1,20 @@
 ---
-name: driver-receipt-generator
-version: 1.0.0
-description: Generate professional receipts for rideshare, taxi, limo, and delivery drivers. Use when a driver needs to create/send a receipt for a passenger, track ride income, or manage driver finances. Triggers: receipt, invoice, passenger receipt, ride receipt, driver income, tax records.
-license: MIT
+name: driver-receipt-generator-retired
+description: >-
+  Deprecated Driver Receipt Generator notice. Use only when an existing installation
+  or request refers to this retired skill, to explain its unavailable public receipt
+  workflow and point to current ReceAI entry points without claiming automation.
 ---
 
-# Driver Receipt Generator
+# Driver Receipt Generator — retired
 
-Generate professional receipts for drivers (Uber, Lyft, taxi, limo, delivery) in seconds.
+Treat this file as a deprecation notice, not an operational receipt-generation skill.
 
-## Quick Start
+1. Explain that ReceAI retired its standalone public Receipt maker in [PR #77](https://github.com/bptravel2017/receai-platform/pull/77). Do not promise anonymous receipt creation, automatic email sending, share-link generation, saved receipt history, income tracking, mileage tracking, or tax summaries through this skill.
+2. Do not direct users to the former Create Receipt action or a blank receipt route. Do not construct synthetic shared receipt links or call retained receipt APIs to recreate the retired public workflow.
+3. For an existing shared receipt, use only the original valid link supplied by the user; the compatibility view preserves historical links. Do not treat that view as a public creation entry point.
+4. If the user needs to request payment, explain that the separate [invoice editor](https://receai.com/invoice-generator) creates a downloadable invoice PDF for the user to send manually. Do not substitute an invoice for proof of payment or claim to have generated, emailed, or shared a receipt.
+5. For existing account business, direct the user to [workspace sign in](https://receai.com/login?next=%2Fdashboard). Daytime and other signed-in accounting features are separate from this retired skill; do not claim workspace integration or access.
+6. Recommend disabling or replacing older installed copies of this skill. Do not offer a registry installation or publishing command.
 
-```
-Ask: "Create a receipt for a $45 airport ride today"
-→ Generates receipt via ReceAI (https://www.receai.com)
-→ Returns receipt link + email-ready format
-```
-
-## Workflow
-
-1. **Collect ride details** (prompt if missing):
-   - Passenger name (optional)
-   - Date & time
-   - Pickup → Dropoff locations
-   - Amount
-   - Payment method
-
-2. **Generate receipt** via ReceAI:
-   ```
-   https://www.receai.com → Create Receipt
-   - Business: Driver's name/car service
-   - Service: Ride / Airport Transfer / Delivery
-   - Amount: $XX.XX
-   - Date: YYYY-MM-DD
-   ```
-
-3. **Deliver**:
-   - Return shareable link
-   - Or email directly to passenger
-   - Or screenshot for driver's records
-
-## Receipt Templates
-
-### Standard Ride
-```
-RECEIPT
-From: [Driver Name / Car Service]
-To: [Passenger Name]
-Date: [Date]
-Service: Ride - [Pickup] → [Dropoff]
-Amount: $[XX.XX]
-Payment: [Cash/Card/Venmo/Zelle]
-Receipt #: [Auto-generated]
-Thank you for riding!
-```
-
-### Airport Transfer
-```
-RECEIPT
-Service: Airport Transfer
-Pickup: [Address] → [Airport Terminal]
-Date: [Date] [Time]
-Flat Rate: $[XX.XX]
-Tolls: $[X.XX]
-Total: $[XX.XX]
-Receipt #: [Auto-generated]
-```
-
-### Monthly Summary (Tax Time)
-```
-INCOME SUMMARY - [Month Year]
-Total Rides: [X]
-Total Income: $[X,XXX.XX]
-Avg per Ride: $[XX.XX]
-Platform Breakdown:
-  - Uber: $[XXX]
-  - Cash: $[XXX]
-  - Other: $[XXX]
-```
-
-## ReceAI Integration
-
-- **URL**: https://www.receai.com
-- **Free tier**: Unlimited receipts
-- **Features**: Custom logo, email sending, receipt history
-- **PWA**: Install on mobile for quick access
-
-## Tips
-
-- Always ask for pickup/dropoff for tax records
-- Suggest monthly summaries at year-end for taxes
-- Cash rides need receipts too (builds trust)
-- Custom logo = more professional = better tips
+Read [README.md](README.md) for the retirement and distribution status. Both driver receipt repositories are deprecated; neither offers a supported active receipt workflow.
