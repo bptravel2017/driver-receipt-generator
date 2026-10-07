@@ -1,59 +1,19 @@
-# Driver Receipt Generator 🚗
+# Driver Receipt Generator — deprecated
 
-Professional receipt generation for rideshare, taxi, limo, and delivery drivers. Built for the US market.
+**Status: retired after [ReceAI PR #77](https://github.com/bptravel2017/receai-platform/pull/77), merged on 2026-10-07. Do not install or use this skill to create, share, or email new receipts.**
 
-## Who Is This For?
+## Why it was retired
 
-- **Uber / Lyft drivers** — Generate receipts for cash rides or passengers who request documentation
-- **Taxi drivers** — Professional receipts for every fare
-- **Limo / Black car drivers** — Premium receipts for corporate clients
-- **Delivery drivers** — Track income from gig work
-- **Independent contractors** — Tax-ready income records
+This repository contained instructions and package metadata only, with no executable receipt-generation or email integration. Its main workflow depended on ReceAI's standalone public Receipt maker, which has been retired. The advertised anonymous receipt creation, automatic sending, receipt history, and income/tax summaries are not supported capabilities of this skill.
 
-## Features
+## Current ReceAI entry points
 
-- ✅ Instant receipt generation via [ReceAI](https://www.receai.com)
-- ✅ Standard ride, airport transfer, and custom templates
-- ✅ Monthly income summaries for tax season
-- ✅ Email receipts directly to passengers
-- ✅ Free to use — no subscription required
+- [Public invoice editor](https://receai.com/invoice-generator): create and download an invoice PDF to request payment; send the downloaded file yourself. An invoice is not proof of payment. This is a separate product, not a replacement receipt workflow for this skill.
+- [Accounting workspace sign in](https://receai.com/login?next=%2Fdashboard): use existing authorized account features, including Daytime. This retired skill does not automate the workspace.
+- Existing valid shared receipt links remain available through ReceAI's compatibility view. Open the original link unchanged. Do not manufacture new shared links to bypass retirement of public receipt creation.
 
-## Quick Start
+## Distribution status
 
-```bash
-clawhub install driver-receipt-generator
-```
+This repository and [driver-receipt](https://github.com/bptravel2017/driver-receipt) are both deprecated; neither is an active receipt skill or a supported canonical distribution. Their formerly conflicting `driver-receipt-generator` package manifests now have distinct retired names and `private: true` to prevent accidental npm publication. ClawHub installation commands and promotional metadata have been removed.
 
-Then ask your OpenClaw agent:
-
-> "Create a receipt for a $45 airport ride today"
-
-> "Generate a monthly income summary for February"
-
-> "I need a receipt for a cash ride from downtown to LAX"
-
-## Receipt Types
-
-### Standard Ride
-Passenger name, pickup/dropoff, date, amount, payment method.
-
-### Airport Transfer
-Flat rate, tolls, terminal info — perfect for corporate clients.
-
-### Monthly Summary
-Total rides, income breakdown by platform, average per ride. Ready for your accountant.
-
-## Why Receipts Matter
-
-- **Tax records** — Track income accurately for Schedule C filing
-- **Professional image** — Passengers trust drivers who provide documentation
-- **Dispute protection** — Written proof of every transaction
-- **Higher tips** — Professional service = better ratings = more tips
-
-## Powered by ReceAI
-
-This skill uses [ReceAI](https://www.receai.com) — a free AI receipt generator built for drivers and small businesses. No account required for basic use.
-
-## License
-
-MIT-0 — Free to use, modify, and redistribute.
+`SKILL.md` remains solely as a deprecation notice for agents that load existing copies. Replace or disable older installed copies; their instructions and feature promises are obsolete. This repository change does not withdraw previously published third-party registry versions or update downloaded copies.
